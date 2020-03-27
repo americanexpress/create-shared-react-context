@@ -1,0 +1,70 @@
+{
+  "name": "create-shared-react-context",
+  "version": "0.0.1",
+  "description": "A memoized wrapper of React.createContext",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "posttest": "npm run lint && npm run test:git-history && npm run test:lockfile",
+    "lint": "eslint . --ignore-path .gitignore --ext js",
+    "test:git-history": "commitlint --from origin/master --to HEAD",
+    "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -c -i"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/americanexpress/create-shared-react-context.git"
+  },
+  "homepage": "https://github.com/americanexpress/create-shared-react-context",
+  "bugs": {
+    "url": "https://github.com/americanexpress/create-shared-react-context/issues"
+  },
+  "contributors": [
+    "Andrew Sutedja <Andrew.Sutedja@aexp.com>"
+  ],
+  "peerDependencies": {
+    "react": "^16.3.0"
+  },
+  "jest": {
+    "preset": "amex-jest-preset-react"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "amex-jest-preset-react": "^6.0.0",
+    "babel-preset-amex": "^3.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-amex": "^11.2.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lockfile-lint": "^4.1.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github",
+      "@semantic-release/npm"
+    ],
+    "branch": "master"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createSharedContext should not return the same context object if the key does not matches 1`] = `
+<TestComponent>
+  <div
+    id="value"
+  >
+    default
+  </div>
+</TestComponent>
+`;
+
+exports[`createSharedContext should return the same context object if the key matches 1`] = `
+<TestComponent>
+  <div
+    id="value"
+  >
+    context value
+  </div>
+</TestComponent>
+`;
+
+exports[`createSharedContext should use the same default value from first call 1`] = `
+<TestComponent>
+  <div
+    id="value"
+  >
+    default
+  </div>
+</TestComponent>
+`;
