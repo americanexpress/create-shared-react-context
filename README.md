@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src='https://github.com/americanexpress/create-shared-react-context/raw/master/create-shared-react-context.png' alt="Create Shared React Context - One Amex" width='50%'/>
+  <img src='https://raw.githubusercontent.com/americanexpress/create-react-shared-context/master/create-shared-react-context.png' alt="Create Shared React Context - One Amex" width='50%'/>
 </h1>
 
 > A memoized wrapper around React.createContext. Used by [One App](https://github.com/americanexpress/one-app) as a dependency to pass React context between [Holocron modules](https://github.com/americanexpress/holocron/tree/master/packages/holocron) without external usage.
