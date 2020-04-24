@@ -12,7 +12,8 @@
  * under the License.
  */
 
-const { createContext } = require('react');
+// eslint-disable-next-line prefer-destructuring
+const createContext = require('react').createContext;
 
 const contexts = {};
 
