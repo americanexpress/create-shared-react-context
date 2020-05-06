@@ -11,11 +11,11 @@
  * or implied. See the License for the specific language governing permissions and limitations
  * under the License.
  */
-
+/* eslint-disable no-var,vars-on-top */
 // eslint-disable-next-line prefer-destructuring
-const createContext = require('react').createContext;
+var createContext = require('react').createContext;
 
-const contexts = {};
+var contexts = {};
 
 module.exports = function createSharedReactContext(defaultValue, key) {
   if (!key) {
@@ -26,7 +26,7 @@ module.exports = function createSharedReactContext(defaultValue, key) {
   if (contexts[key]) {
     return contexts[key];
   }
-  const context = createContext(defaultValue);
+  var context = createContext(defaultValue);
   contexts[key] = context;
   return context;
 };
