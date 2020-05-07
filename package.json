@@ -1,6 +1,6 @@
 {
   "name": "create-shared-react-context",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A memoized wrapper of React.createContext",
   "main": "index.js",
   "scripts": {
