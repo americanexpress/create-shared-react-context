@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/americanexpress/create-shared-react-context/compare/v1.0.4...v1.0.5) (2022-04-05)
+
+
+### Bug Fixes
+
+* **labeler:** fix globing ([882f0d9](https://github.com/americanexpress/create-shared-react-context/commit/882f0d94c09024ce18e7b9d44e07c13e61882026))
+
 ## [1.0.4](https://github.com/americanexpress/create-shared-react-context/compare/v1.0.3...v1.0.4) (2021-12-01)
 
 
