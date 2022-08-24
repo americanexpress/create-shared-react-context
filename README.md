@@ -1,12 +1,12 @@
 <h1 align="center">
-  <img src='https://raw.githubusercontent.com/americanexpress/create-shared-react-context/master/create-shared-react-context.png' alt="Create Shared React Context - One Amex" width='50%'/>
+  <img src='https://raw.githubusercontent.com/americanexpress/create-shared-react-context/main/create-shared-react-context.png' alt="Create Shared React Context - One Amex" width='50%'/>
 </h1>
 
-> A memoized wrapper around React.createContext. Used by [One App](https://github.com/americanexpress/one-app) as a dependency to pass React context between [Holocron modules](https://github.com/americanexpress/holocron/tree/master/packages/holocron) without external usage.
+> A memoized wrapper around React.createContext. Used by [One App](https://github.com/americanexpress/one-app) as a dependency to pass React context between [Holocron modules](https://github.com/americanexpress/holocron/tree/main/packages/holocron) without external usage.
 
 [![npm version](https://badge.fury.io/js/create-shared-react-context.svg)](https://badge.fury.io/js/create-shared-react-context)
-[![Build Status](https://travis-ci.org/americanexpress/create-shared-react-context.svg?branch=master)](https://travis-ci.org/americanexpress/create-shared-react-context)
-[![Coverage Status](https://coveralls.io/repos/americanexpress/create-shared-react-context/badge.svg?branch=master&service=github)](https://coveralls.io/github/americanexpress/create-shared-react-context?branch=master)
+[![Build Status](https://travis-ci.org/americanexpress/create-shared-react-context.svg?branch=main)](https://travis-ci.org/americanexpress/create-shared-react-context)
+[![Coverage Status](https://coveralls.io/repos/americanexpress/create-shared-react-context/badge.svg?branch=main&service=github)](https://coveralls.io/github/americanexpress/create-shared-react-context?branch=main)
 
 ## 👩‍💻 Hiring 👨‍💻
 
@@ -77,23 +77,23 @@ This hook runs `npm test` before allowing a commit to be checked in.
 **`commit-msg`**
 
 This hook verifies that your commit message matches the One Amex conventions. See the **commit
-message** section in the [contribution guidelines](https://github.com/americanexpress/create-shared-react-context/blob/master/CONTRIBUTING.md).
+message** section in the [contribution guidelines](https://github.com/americanexpress/create-shared-react-context/blob/main/CONTRIBUTING.md).
 
 <br />
 
 ## 🏆 Contributing
 
-See [contributing guidelines](https://github.com/americanexpress/create-shared-react-context/blob/master/CONTRIBUTING.md)
+See [contributing guidelines](https://github.com/americanexpress/create-shared-react-context/blob/main/CONTRIBUTING.md)
 
 <br />
 
 ## 🗝️ License
 
-Any contributions made under this project will be governed by the [Apache License 2.0](https://github.com/americanexpress/create-shared-react-context/blob/master/LICENSE.txt).
+Any contributions made under this project will be governed by the [Apache License 2.0](https://github.com/americanexpress/create-shared-react-context/blob/main/LICENSE.txt).
 
 <br />
 
 ## 🗣️ Code of Conduct
 
-This project adheres to the [American Express Community Guidelines](https://github.com/americanexpress/create-shared-react-context/blob/master/CODE_OF_CONDUCT.md).
+This project adheres to the [American Express Community Guidelines](https://github.com/americanexpress/create-shared-react-context/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to honor these guidelines.
