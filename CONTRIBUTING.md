@@ -105,7 +105,7 @@ Provide the system information which is not limited to the below:
 
 ### Security Bugs
 
-Please review our [Security Policy](https://github.com/americanexpress/create-shared-react-context/blob/master/SECURITY.md). Please follow the instructions outlined in the policy.
+Please review our [Security Policy](https://github.com/americanexpress/create-shared-react-context/blob/main/SECURITY.md). Please follow the instructions outlined in the policy.
 
 ## Getting in contact
 
