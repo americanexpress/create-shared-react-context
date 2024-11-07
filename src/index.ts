@@ -11,22 +11,27 @@
  * or implied. See the License for the specific language governing permissions and limitations
  * under the License.
  */
-/* eslint-disable no-var,vars-on-top */
-// eslint-disable-next-line prefer-destructuring
-var createContext = require('react').createContext;
+import React, { type Context } from "react";
 
-var contexts = {};
+const contexts: { [key: string]: Context<unknown> | undefined } = {};
 
-module.exports = function createSharedReactContext(defaultValue, key) {
+function createSharedReactContext<T>(
+  defaultValue: T,
+  key: string,
+): Context<unknown> {
   if (!key) {
-    // eslint-disable-next-line no-console
-    console.warn('Second parameter in createSharedReactContext was not set, defaulting to React.createContext');
-    return createContext(defaultValue);
+    // eslint-disable-next-line no-console -- Warn users if they don't provide a key
+    console.warn(
+      "Second parameter in createSharedReactContext was not set, defaulting to React.createContext",
+    );
+    return React.createContext(defaultValue) as Context<unknown>;
   }
   if (contexts[key]) {
-    return contexts[key];
+    return contexts[key] as Context<unknown>;
   }
-  var context = createContext(defaultValue);
+  const context = React.createContext(defaultValue) as Context<unknown>;
   contexts[key] = context;
   return context;
-};
+}
+
+export default createSharedReactContext;

@@ -13,8 +13,8 @@
  */
 
 module.exports = {
-  extends: ['@commitlint/config-conventional'],
+  extends: ["@commitlint/config-conventional"],
   rules: {
-    'scope-case': [2, 'always', ['pascal-case', 'camel-case', 'kebab-case']],
+    "scope-case": [2, "always", ["pascal-case", "camel-case", "kebab-case"]],
   },
 };

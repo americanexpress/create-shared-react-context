@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`createSharedReactContext > should not return the same context object if the key does not match 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="consumerDiv"
+      id="value"
+    >
+      default
+    </div>
+  </div>
+</body>
+`;
+
+exports[`createSharedReactContext > should return the same context object if the key matches 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="consumerDiv"
+      id="value"
+    >
+      context value
+    </div>
+  </div>
+</body>
+`;
+
+exports[`createSharedReactContext > should use the same default value from first call 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="consumerDiv"
+      id="value"
+    >
+      default
+    </div>
+  </div>
+</body>
+`;

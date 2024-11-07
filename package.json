@@ -2,13 +2,22 @@
   "name": "create-shared-react-context",
   "version": "1.0.3",
   "description": "A memoized wrapper of React.createContext",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "test:unit": "jest",
+    "build": "tsc --declaration",
+    "test:unit": "vitest --run",
     "test": "npm run test:unit && npm run lint && npm run test:git-history && npm run test:lockfile",
-    "lint": "eslint . --ignore-path .gitignore --ext js",
+    "lint": "eslint src/**/* --ignore-path .gitignore --ext js && prettier --check **/*.{js,ts,tsx}",
     "test:git-history": "commitlint --from origin/main --to HEAD",
-    "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -o npm: -c -i"
+    "test:lockfile": "lockfile-lint -p package-lock.json -t npm -a npm -o https: -o npm: -c -i",
+    "prepare": "husky install"
   },
   "license": "Apache-2.0",
   "repository": {
@@ -25,12 +34,10 @@
   "peerDependencies": {
     "react": ">=16.3.0 <19"
   },
-  "jest": {
-    "preset": "amex-jest-preset-react"
-  },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
+    "@babel/preset-typescript": "^7.26.0",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/changelog": "^6.0.3",
@@ -38,18 +45,23 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^10.0.4",
     "@semantic-release/release-notes-generator": "^11.0.4",
-    "amex-jest-preset-react": "^6.1.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^12.1.5",
+    "@types/node": "^18.19.64",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@vitest/coverage-v8": "^2.1.8",
     "babel-preset-amex": "^3.3.0",
-    "enzyme": "^3.11.0",
-    "enzyme-to-json": "^3.4.4",
-    "eslint": "^6.8.0",
-    "eslint-config-amex": "^11.2.0",
-    "husky": "^4.2.3",
-    "jest": "^27.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-amex": "^16.3.0",
+    "husky": "^8.0.3",
     "lockfile-lint": "^4.1.0",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-test-renderer": "^16.13.0"
+    "prettier": "^3.4.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "~5.4.4",
+    "vitest": "^2.1.4"
   },
   "release": {
     "plugins": [
