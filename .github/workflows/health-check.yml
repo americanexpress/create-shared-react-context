@@ -25,6 +25,8 @@ jobs:
       run: npm ci
       env:
         NODE_ENV: development
+    - name: Build
+      run: npm run build
     - name: Run Test Script
       run: npm test
       env:

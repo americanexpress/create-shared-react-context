@@ -26,6 +26,8 @@ jobs:
           node-version-file: ".nvmrc"
       - name: Install dependencies
         run: npm ci
+      - name: Build
+        run: npm run build
       - name: Release
         env:
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
