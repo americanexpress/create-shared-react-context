@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/americanexpress/create-shared-react-context/compare/v1.0.5...v1.1.0) (2025-01-13)
+
+
+### Features
+
+* **typescript:** convert to typescript ([967de32](https://github.com/americanexpress/create-shared-react-context/commit/967de322d11cae523496ed025e298154e1db0c09))
+* **typescript:** convert to typescript ([3721d02](https://github.com/americanexpress/create-shared-react-context/commit/3721d02d8bf1dea7c14db25712d1c3fce5547068))
+
 ## [1.0.5](https://github.com/americanexpress/create-shared-react-context/compare/v1.0.4...v1.0.5) (2022-04-05)
 
 
