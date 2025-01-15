@@ -34,4 +34,4 @@ function createSharedReactContext<T>(
   return context;
 }
 
-export default createSharedReactContext;
+export = createSharedReactContext;
