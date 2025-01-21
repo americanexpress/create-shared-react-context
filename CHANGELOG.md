@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/americanexpress/create-shared-react-context/compare/v1.1.0...v1.1.1) (2025-01-15)
+
+
+### Bug Fixes
+
+* **interop:** fix export and use commonJS ([#53](https://github.com/americanexpress/create-shared-react-context/issues/53)) ([1777b68](https://github.com/americanexpress/create-shared-react-context/commit/1777b685a0774a73af883e48e9b0609db2168d92))
+
 # [1.1.0](https://github.com/americanexpress/create-shared-react-context/compare/v1.0.5...v1.1.0) (2025-01-13)
 
 
