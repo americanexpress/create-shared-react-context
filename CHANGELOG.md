@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/americanexpress/create-shared-react-context/compare/v1.1.1...v1.1.2) (2025-01-29)
+
+
+### Bug Fixes
+
+* **deps:** update lock file ([c5852ac](https://github.com/americanexpress/create-shared-react-context/commit/c5852ace8ae4bff96d260c99022008c8cb6560b5))
+
 ## [1.1.1](https://github.com/americanexpress/create-shared-react-context/compare/v1.1.0...v1.1.1) (2025-01-15)
 
 
